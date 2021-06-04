@@ -1,0 +1,87 @@
+  @import url("https://fonts.googleapis.com/css?family=Princess Sofia|Alegreya Sans SC|Alegreya SC |DM Sans");
+   
+.main{
+width: 300px;
+height: 350px;
+background-color: #e8e8e8;
+padding-top: 50px;
+font-family: 'Alegreya Sans SC';
+}
+.buttons{
+height: 45px;
+width: 65%;
+background-color: #d3d3d3;
+color: #9a9a9a;
+text-align: center;
+margin: 15px 0 0 15%;
+font-family: 'Alegreya Sans SC';
+}
+
+
+.input{
+height: 45px;
+width: 100%;
+font-size: 18px;
+background-color: white;
+font-weight: bolder;
+border: none;
+text-align: center;
+opacity: 0.5;
+font-family: 'Alegreya Sans SC';
+}
+.login{
+height: 45px;
+width: 65%;
+font-size: 18px;
+margin: 15px 0 0 -15px;
+background-color: #56c9e4;
+font-weight: bold;
+border: none;
+font-family: 'Alegreya SC';
+color: #8ee2ef;
+}
+h2{
+
+color: #9a9a9a;
+}
+.navpan{
+background-color: #56c9e4;
+color: #9a9a9a;
+font-weight: bold;
+font-family: 'Alegreya SC';
+font-size: 25px;
+
+}
+.h1c{
+font-family: 'Alegreya SC';
+color: #9a9a9a;
+}
+h1{
+font-family: 'Alegreya Sans SC';
+
+}
+.carousel2{
+max-width:100%; 
+height:auto; 
+}
+.tbl{
+color: white;
+} 
+
+div>p{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #56c9e4;
+}
+div u{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#56c9e4;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #56c9e4;
+    color: white;
+  }
+

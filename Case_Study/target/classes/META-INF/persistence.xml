@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	
+	<persistence-unit name="LapmedDB">
+	 <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/lapmed_final" />
+            <property name="javax.persistence.jdbc.user" value="root" />
+            <property name="javax.persistence.jdbc.password" value="password" />
+            <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver" />
+            <property name="javax.persistence.schema-generation.database.action" value="create"/>
+            <property name="hibernate.show_sql" value="true" />
+            <property name="hibernate.format_sql" value="true" />
+        </properties>
+	
+	</persistence-unit>
+	
+<!-- 	<persistence-unit name="Case_Study"> -->
+<!-- 	<class>com.jpa.entities.Doctor</class> -->
+<!-- 	<class>com.jpa.entities.Patient</class> -->
+<!-- 	<class>com.jpa.entities.Address</class> -->
+<!-- 	<class>com.jpa.entities.Insurance</class> -->
+<!-- 	<class>com.jpa.entities.User</class> -->
+	
+<!-- 	 </persistence-unit> -->
+	 
+<!-- 	 DB Configuration --> 
+<!-- 	<properties> -->
+<!-- 	<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/lapmed_final"/> -->
+<!-- 	<property name="javax.persistence.jdbc.user" value="root"/> -->
+<!-- 	<property name="javax.persistence.jdbc.password" value="password"/> -->
+	
+<!-- 	EclipseLink Configuration --> 
+<!-- 	<property name="eclipselink.logging.level" value="OFF"/> -->
+<!-- 	<property name="eclipselink.ddl-generation" value="create-or-extend-tables"/> -->
+<!-- 	</properties> -->
+<!-- 	</persistence-unit> -->
+</persistence>
