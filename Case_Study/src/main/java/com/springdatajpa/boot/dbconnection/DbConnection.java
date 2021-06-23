@@ -1,4 +1,4 @@
-package com.springdatajpa.dbconnection;
+package com.springdatajpa.boot.dbconnection;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;

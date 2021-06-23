@@ -1,6 +1,10 @@
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}"/>
 <!DOCTYPE html>
-<html>
-    
+<html>  
         <head>
             <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,8 +24,7 @@
         <body class="headerbg">
             <header>
                 <div class="d-flex flex-row-reverse justify-content-center">
-                    
-                
+                                    
                 <div class="p-2"><a href="reg" class="btn btn-secondary" role="button">Registration</a></div>
                     <div class="p-2">
                         <h2><strong>LapMed | Store your Medical History ONLINE</strong></h2>
@@ -38,31 +41,34 @@
             </nav>
             <br>
             <br>
-           
-            
+                    
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-4 text-center mx-auto">
                         <h2>User Login</h2>
-                        <form name="myForm2" onsubmit="return(loginvalidation())" method="POST" id="formtwo">
-                        <div class="buttons">
-                            <input class="input" type="text" id="email" name="email" onfocus="this.value=''" placeholder="Email">
-                        </div>
-                            <div class="buttons">
-                                <input class="input" type="password" id="passw" name="passw" onfocus="this.value=''" placeholder="Password">
+                        <form method="POST" action="${contextPath}/login">
+                        <div class="buttons ${error != null ? 'has-error' : ''}">                        	
+                            <input class="input" type="text" name="username" placeholder="Username" autofocus="true"/>
                             </div>
-                            <div class="buttons">
+                            <span>${message}</span>                     
+                            <div class="buttons ${error != null ? 'has-error' : ''}">
+                                <input class="input" type="password" name="password" onfocus="this.value=''" placeholder="Password"/>
+                                
+                                <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
+                            </div>
+                            <span>${error}</span>
+                            <br>
+                            <div>
                                 <div>
-                                <button type="submit" class="btn btn-secondary" role="button">Login</button>
+                                <button type="submit" class="btn btn-secondary">Login</button>
+                                &nbsp;
+                                <a href="${contextPath}/reg">Create an account</a>
                                 </div>
+                                
                             </div>
                     </form>
-                </div>
-                
+                </div>             
                     </div>
             </div>
-
-
-        </body>
-   
+        </body>  
 </html>

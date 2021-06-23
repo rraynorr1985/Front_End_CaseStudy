@@ -1,8 +1,8 @@
-package com.springdatajpa.dao;
+package com.springdatajpa.boot.dao;
 
 import java.util.List;
 
-import com.springdatajpa.entities.Doctor;
+import com.springdatajpa.boot.entities.Doctor;
 
 public interface DoctorDaoI {
 	public boolean addDoctor(Doctor doc);

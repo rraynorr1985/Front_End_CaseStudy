@@ -1,4 +1,7 @@
-  @import url("https://fonts.googleapis.com/css?family=Princess Sofia|Alegreya Sans SC|Alegreya SC |DM Sans");
+ 
+.text-danger{
+	color:red;
+}
    
 .main{
 width: 300px;
@@ -8,16 +11,37 @@ padding-top: 50px;
 font-family: 'Alegreya Sans SC';
 }
 .buttons{
-height: 45px;
-width: 65%;
-background-color: #d3d3d3;
-color: #9a9a9a;
-text-align: center;
-margin: 15px 0 0 15%;
-font-family: 'Alegreya Sans SC';
+  height: 45px;
+    width: 65%;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border-style: solid;
+    border-color: rgb(225, 225, 228);
+    border-radius: 0px;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: #47607d;
+    text-align: center;
+    margin: 15px 0 0 15%;
+    font-family: 'Alegreya Sans SC';
+}
+.buttonreg{
+    height: 45px;
+    width: 65%;
+    background-color: -internal-light-dark(rgb(255, 255, 255), rgb(59, 59, 59));
+    border-style: solid;
+    border-color: rgb(225, 225, 228);
+    border-radius: 0px;
+    border-width: 0px;
+    box-sizing: border-box;
+    color: #47607d;
+    text-align: center;
+    margin: 15px 0 0 15%;
+    font-family: 'Alegreya Sans SC';
 }
 
-
+.radio{
+    opacity:0.5;
+}
 .input{
 height: 45px;
 width: 100%;
@@ -30,18 +54,17 @@ opacity: 0.5;
 font-family: 'Alegreya Sans SC';
 }
 .login{
-height: 45px;
-width: 65%;
-font-size: 18px;
-margin: 15px 0 0 -15px;
-background-color: #56c9e4;
-font-weight: bold;
-border: none;
-font-family: 'Alegreya SC';
-color: #8ee2ef;
+ height: 45px;
+    width: 65%;
+    font-size: 18px;
+    margin: 15px 0 0 -15px;
+    background-color: #56c9e4;
+    font-weight: bold;
+    border: none;
+    font-family: 'Alegreya SC';
+    color: #8ee2ef;
 }
 h2{
-
 color: #9a9a9a;
 }
 .navpan{
@@ -67,12 +90,11 @@ height:auto;
 .tbl{
 color: white;
 } 
+#tbl{
+    background-color: white;
+	}
 
-div>p{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #56c9e4;
-}
+
 div u{
     font-size: 2.5rem;
     font-weight: 700;

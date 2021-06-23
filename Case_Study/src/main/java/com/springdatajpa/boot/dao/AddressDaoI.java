@@ -1,8 +1,8 @@
-package com.springdatajpa.dao;
+package com.springdatajpa.boot.dao;
 
 import java.util.List;
 
-import com.springdatajpa.entities.Address;
+import com.springdatajpa.boot.entities.Address;
 
 public interface AddressDaoI {
 	public boolean addAddress(Address addr);

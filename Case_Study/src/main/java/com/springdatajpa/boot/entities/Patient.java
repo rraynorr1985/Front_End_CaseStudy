@@ -1,4 +1,4 @@
-package com.springdatajpa.entities;
+package com.springdatajpa.boot.entities;
 
 import java.util.Date;
 import java.util.HashSet;

@@ -1,10 +1,10 @@
-package com.springdatajpa.dao;
+package com.springdatajpa.boot.dao;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.springdatajpa.dbconnection.DbConnection;
-import com.springdatajpa.entities.Patient;
+import com.springdatajpa.boot.dbconnection.DbConnection;
+import com.springdatajpa.boot.entities.Patient;
 
 public class PatientDao extends DbConnection implements PatientDaoI {
 
