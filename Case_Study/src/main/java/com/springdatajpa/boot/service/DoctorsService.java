@@ -50,6 +50,14 @@ public class DoctorsService {
 	   docFound.setEducation(doctor.getEducation());
 	   docFound.setSpecialization(doctor.getSpecialization());
 	   docFound.setGender(doctor.getGender());
+	   Address docAdd = docFound.getAddress();
+	   docAdd.setZipcode(doctor.getAddress().getZipcode());
+	   docAdd.setStateName(doctor.getAddress().getStateName());
+	   docAdd.setCitiName(doctor.getAddress().getCitiName());
+	   docAdd.setStreetName(doctor.getAddress().getStreetName());
+	   docAdd.setHouseNumber(doctor.getAddress().getHouseNumber());
+	   docAdd.setAptNumber(doctor.getAddress().getAptNumber());
+	   docFound.setAddress(docAdd);
    }
    //Transactional for persisting to Database | Bounding Adress with Doctor
    @Transactional

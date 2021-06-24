@@ -66,6 +66,7 @@
           <th>Specialty</th>
           <th>Email</th>
           <th>Phone</th>
+          <th>Address(Zip,State,Street)</th>
           <th>Accept Insurances</th>
           <th>Action</th>
         </tr>
@@ -78,6 +79,14 @@
           <td>${doctor.specialization}</td>
           <td>${doctor.email}</td>
           <td>${doctor.phoneNumber}</td>
+          <td>${doctor.address.zipcode}
+          ${doctor.address.stateName}
+          ${doctor.address.citiName}
+          ${doctor.address.houseNumber}
+          ${doctor.address.streetName}
+          <c:if test="${doctor.address.aptNumber != null }">${doctor.address.aptNumber}</c:if>
+          </td>
+          
           
           <td><c:forEach items="${doctor.insurance}" var="docIns">
           ${docIns.insurName} </c:forEach></td>

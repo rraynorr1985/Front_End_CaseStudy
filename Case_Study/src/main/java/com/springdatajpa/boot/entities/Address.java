@@ -40,10 +40,8 @@ public class Address {
 	//Constructors
 	public Address() {};
 	
-	public Address(Integer id, String zipcode, String stateName, String citiName, String street, String houseNumber,
+	public Address(String zipcode, String stateName, String citiName, String street, String houseNumber,
 			String aptNumber) {
-		super();
-		this.id = id;
 		this.zipcode = zipcode;
 		this.stateName = stateName;
 		this.citiName = citiName;

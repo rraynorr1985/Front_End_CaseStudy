@@ -9,5 +9,7 @@ import com.springdatajpa.boot.entities.Doctor;
 
 @Repository
 public interface DoctorsRepository extends CrudRepository<Doctor, Integer> {
+	
+
 
 }

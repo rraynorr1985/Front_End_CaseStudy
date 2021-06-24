@@ -25,6 +25,7 @@ public class User {
 	private String password;
 	@Transient
 	private String passwordConfirm;
+	private boolean isActive=true;
 	
 	//ManytoMany relationship to Role entity
 	@ManyToMany
@@ -43,7 +44,8 @@ public class User {
 	public void setPasswordConfirm(String passwordConfirm) {
 		this.passwordConfirm = passwordConfirm;
 	}
-	private boolean isActive=true;
+	
+	
 	
 	public Integer getId() {
 		return id;
