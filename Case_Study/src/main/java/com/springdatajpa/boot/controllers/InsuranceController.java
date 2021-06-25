@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -75,12 +76,29 @@ public class InsuranceController {
 		iService.save(insid, docid);
 		return "redirect:/doctors";
 	}
+	//Handler for Doctor editing Form rendering
+		@RequestMapping(value="/editins", method=RequestMethod.GET)
+		public ModelAndView editInsurance(@RequestParam Integer insid) 
+		{
+			ModelAndView mav = new ModelAndView("edit_ins");
+			Insurance insurance = iService.get(insid);
+			mav.addObject("fins",insurance);
+			return mav;
+		}
+		//Handler for Doctor editing Form Saving
+	@RequestMapping(value="/editins", method=RequestMethod.POST)
+	public String editDoc(@ModelAttribute("insurance") Insurance ins2)
+	{
+		iService.updateIns(ins2);
+		return "redirect:/listinsurance";
+	}
+	
 	//For Deleting Insurance
-	@RequestMapping(value="/deleteins")
+	@GetMapping(value="/deleteins")
 	public String deleteDoc(@RequestParam Integer insid)
 	{
 		iService.delete(insid);
-		return "redirect:/addinsurance";
+		return "addinsurance";
 	}
 
 }
